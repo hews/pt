@@ -1,5 +1,5 @@
 require 'yaml'
-require 'colored'
+require 'colorize'
 require 'highline'
 require 'tempfile'
 
