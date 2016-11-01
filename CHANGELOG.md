@@ -1,4 +1,8 @@
-# pt changelog
+# pt CHANGELOG
+
+## v0.8.0
+
+Major refactor of code to work with updated dependencies and API.
 
 ## v0.7.3
 
