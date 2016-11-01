@@ -10,14 +10,14 @@ class PT::Client
   end
 
   def initialize(api_number)
-    PivotalTracker::Client.token = api_number
+    PivotalTracker::Client.token   = api_number
+    PivotalTracker::Client.use_ssl = true
     @project = nil
   end
 
   def get_project(project_id)
     get_projects
     project = PivotalTracker::Project.find(project_id)
-    PivotalTracker::Client.use_ssl = project.use_https
     project
   end
 
